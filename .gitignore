@@ -1,0 +1,25 @@
+# --- .NET / Visual Studio ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+.vs/
+packages/
+*.user
+*.suo
+*.userprefs
+
+# --- Локальные БД ---
+*.mdf
+*.ldf
+*.ndf
+
+# --- Посторонние утилиты (не должны попадать в репозиторий) ---
+CheatEngine*.exe
+scoped_dir*/
+
+# --- IDE / OS ---
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

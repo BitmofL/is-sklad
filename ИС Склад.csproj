@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88EFDDFB-E262-486B-8E5E-05FB449F25BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ИС_Склад</RootNamespace>
+    <AssemblyName>ИС Склад</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersForm.Designer.cs">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsMovementReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsMovementReportForm.Designer.cs">
+      <DependentUpon>GoodsMovementReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryForm.Designer.cs">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kurse_26ip212DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kurse_26ip212DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kurse_26ip212DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kurse_26ip212DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kurse_26ip212DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kurse_26ip212DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoveGoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveGoodsForm.Designer.cs">
+      <DependentUpon>MoveGoodsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveGoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveGoodsForm.Designer.cs">
+      <DependentUpon>ReceiveGoodsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShipGoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShipGoodsForm.Designer.cs">
+      <DependentUpon>ShipGoodsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockBalanceReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockBalanceReportForm.Designer.cs">
+      <DependentUpon>StockBalanceReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehousesForm.Designer.cs">
+      <DependentUpon>WarehousesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersForm.Designer.cs">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kurse_26ip212DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kurse_26ip212DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersForm.resx">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsMovementReportForm.resx">
+      <DependentUpon>GoodsMovementReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryForm.resx">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveGoodsForm.resx">
+      <DependentUpon>MoveGoodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveGoodsForm.resx">
+      <DependentUpon>ReceiveGoodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShipGoodsForm.resx">
+      <DependentUpon>ShipGoodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockBalanceReportForm.resx">
+      <DependentUpon>StockBalanceReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersForm.resx">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehousesForm.resx">
+      <DependentUpon>WarehousesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="kurse_26ip212DataSet.xsc">
+      <DependentUpon>kurse_26ip212DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kurse_26ip212DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kurse_26ip212DataSet.xss">
+      <DependentUpon>kurse_26ip212DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet1.xsc">
+      <DependentUpon>kurse_26ip212DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kurse_26ip212DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kurse_26ip212DataSet1.xss">
+      <DependentUpon>kurse_26ip212DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet2.xsc">
+      <DependentUpon>kurse_26ip212DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kurse_26ip212DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kurse_26ip212DataSet2.xss">
+      <DependentUpon>kurse_26ip212DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet3.xsc">
+      <DependentUpon>kurse_26ip212DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kurse_26ip212DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kurse_26ip212DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kurse_26ip212DataSet3.xss">
+      <DependentUpon>kurse_26ip212DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="box.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
